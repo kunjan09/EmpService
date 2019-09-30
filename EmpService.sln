@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.779
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmpService", "EmpService\EmpService.csproj", "{858883AD-5CA5-4B9A-8C0D-47FF5091CFD0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeDataAccess", "EmployeeDataAccess\EmployeeDataAccess.csproj", "{4AAA03CE-D230-4FA9-9625-97B9A3F39203}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{858883AD-5CA5-4B9A-8C0D-47FF5091CFD0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{858883AD-5CA5-4B9A-8C0D-47FF5091CFD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{858883AD-5CA5-4B9A-8C0D-47FF5091CFD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{858883AD-5CA5-4B9A-8C0D-47FF5091CFD0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4AAA03CE-D230-4FA9-9625-97B9A3F39203}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4AAA03CE-D230-4FA9-9625-97B9A3F39203}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4AAA03CE-D230-4FA9-9625-97B9A3F39203}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4AAA03CE-D230-4FA9-9625-97B9A3F39203}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3435B159-2A0E-4826-8683-961EDFE57E90}
+	EndGlobalSection
+EndGlobal

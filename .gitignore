@@ -1,0 +1,10 @@
+bin/
+obj/
+.vs/
+LoanPriceUDFs.csproj.user
+*.resx
+Resources.Designer.cs
+LAVAc.csproj.user
+LAVAm.csproj.user
+LAVAs.csproj.user
+
