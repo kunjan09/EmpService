@@ -27,6 +27,8 @@ namespace EmpService
 
             config.Filters.Add(new RequireHttpsAttribute());
 
+            config.Filters.Add(new BasicAuthorizationAttribute());
+
             EnableCorsAttribute cors = new EnableCorsAttribute("*", "*", "*");
             config.EnableCors(cors);
         }

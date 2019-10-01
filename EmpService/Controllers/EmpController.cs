@@ -4,27 +4,31 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
+using System.Threading;
 using System.Web.Http;
 
 namespace EmpService.Controllers
 {
     public class EmpController : ApiController
     {
+       
         public HttpResponseMessage Get(string gender="All")
         {
+            //get the username from the authentication
+            var username = Thread.CurrentPrincipal.Identity.Name;
+
             using (EmployeeDBEntities entities = new EmployeeDBEntities())
             {
 
-                switch (gender.ToLower())
+                switch (username.ToLower())
                 {
-                    case "all":
-                        return Request.CreateResponse(HttpStatusCode.OK, entities.Employees.ToList());
+                    
                     case "male":
                         return Request.CreateResponse(HttpStatusCode.OK, entities.Employees.Where(x=>x.Gender=="male") .ToList());
                     case "female":
                         return Request.CreateResponse(HttpStatusCode.OK, entities.Employees.Where(x => x.Gender == "female").ToList());
                     default:
-                        return Request.CreateErrorResponse(HttpStatusCode.BadRequest, "Only male or female allowed");
+                        return Request.CreateResponse(HttpStatusCode.BadRequest);
 
                 }
 
